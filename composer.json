@@ -1,0 +1,28 @@
+{
+    "name": "smit-backend/hybrid-rag-retriever",
+    "description": "State-of-the-art hybrid RAG engine blending BM25 lexical keyword matching with dense vector embeddings and Reciprocal Rank Fusion.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "smit-backend",
+            "email": "sync2sale@gmail.com",
+            "homepage": "https://github.com/smit-backend"
+        }
+    ],
+    "require": {
+        "php": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "SmitBackend\\HybridRAG\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SmitBackend\\HybridRAG\\PackageServiceProvider"
+            ]
+        }
+    }
+}
